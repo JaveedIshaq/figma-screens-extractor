@@ -1,0 +1,19 @@
+# # User-requested exclusions
+# exported-projects/
+# node_modules/
+
+# # Common development environment files
+# .env
+# .DS_Store
+# *.log
+# logs/
+# dist/
+# build/
+# *.tmp
+# *.temp
+# .cache/
+# .idea/
+# .vscode/
+# coverage/
+# # Local environment files
+# .env
