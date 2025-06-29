@@ -16,4 +16,4 @@
 # .vscode/
 # coverage/
 # # Local environment files
-# .env
+.env
