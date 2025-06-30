@@ -50,7 +50,27 @@ This tool specifically exports **FRAME nodes** from your Figma design, which rep
 
 ## Configuration
 
-You can customize the export behavior by modifying the `CONFIG` object in `index.js`:
+You can customize the export behavior by modifying the configuration variables in `index.js`:
+
+### Project Name Configuration
+
+```javascript
+// exported project name
+// change this to the name of the project you are exporting
+const OUTPUT_DIR_NAME = "planteria";
+```
+
+### Screen Dimensions Configuration
+
+```javascript
+// change this to the width and height of the screen you are exporting
+const SCREEN_WIDTH = 375;
+const SCREEN_HEIGHT = 812;
+```
+
+### Additional Configuration
+
+You can also customize the export behavior by modifying the `CONFIG` object in `index.js`:
 
 ```javascript
 const CONFIG = {
@@ -70,6 +90,9 @@ const CONFIG = {
 
 ### Configuration Options:
 
+- **`OUTPUT_DIR_NAME`**: The name of your project folder where screens will be saved
+- **`SCREEN_WIDTH`**: Target width for exported screens (in pixels)
+- **`SCREEN_HEIGHT`**: Target height for exported screens (in pixels)
 - **`outputDir`**: Where to save the exported screen images
 - **`imageFormats`**: Image formats to try (PNG recommended for screens)
 - **`includeDimensions`**: Add width×height to filenames (e.g., `screen-login-375x812.png`)
